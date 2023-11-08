@@ -12,13 +12,16 @@ The classes here are adders that can be used to add two objects.
 
     Adder
     IntAdder
+    StringAdder
 
 """
 
 from .adder import Adder
 from .int_adder import IntAdder
+from .string_adder import StringAdder
 
 __all__ = [
     "Adder",
     "IntAdder",
+    "StringAdder",
 ]

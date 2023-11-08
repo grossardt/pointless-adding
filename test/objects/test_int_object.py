@@ -4,12 +4,10 @@
 import unittest
 import io
 import sys
-from ddt import ddt # pylint: disable=import-error
 
 from pointless_adding.objects import IntObject
 from pointless_adding.adders import IntAdder
 
-@ddt
 class TestIntObject(unittest.TestCase):
     """Test Int Object"""
 

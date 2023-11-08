@@ -4,11 +4,9 @@
 import unittest
 import io
 import sys
-from ddt import ddt
 
 from pointless_adding.objects import StringObject
 
-@ddt
 class TestStringObject(unittest.TestCase):
     """Test String Object"""
 

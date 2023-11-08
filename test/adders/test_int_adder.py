@@ -2,12 +2,10 @@
 """ Test Int Adder """
 
 import unittest
-from ddt import ddt
 
 from pointless_adding.objects.int_object import IntObject
 from pointless_adding.adders.int_adder import IntAdder
 
-@ddt
 class TestIntAdder(unittest.TestCase):
     """Test Int Adder"""
 
