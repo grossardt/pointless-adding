@@ -8,7 +8,9 @@ import sys
 from pointless_adding.objects import IntObject
 from pointless_adding.adders import IntAdder
 
-class TestIntObject(unittest.TestCase):
+from test.my_test_case import MyTestCase
+
+class TestIntObject(MyTestCase):
     """Test Int Object"""
 
     def test_int_object_init(self):

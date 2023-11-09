@@ -6,7 +6,9 @@ import unittest
 from pointless_adding.objects.string_object import StringObject
 from pointless_adding.adders.string_adder import StringAdder
 
-class TestStringAdder(unittest.TestCase):
+from test.my_test_case import MyTestCase
+
+class TestStringAdder(MyTestCase):
     """Test Int Adder"""
 
     def test_simple_strings(self):
@@ -14,7 +16,9 @@ class TestStringAdder(unittest.TestCase):
         a = StringObject("Hello")
         b = StringObject("World")
         string_adder = StringAdder()
+        print('before add')
         adder_result = string_adder.add(a,b)
+        print('after add')
         self.assertIsInstance(adder_result, StringObject)
         self.assertEqual(adder_result.value, "HelloWorld")
 

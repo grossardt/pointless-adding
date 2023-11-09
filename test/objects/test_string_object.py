@@ -7,7 +7,9 @@ import sys
 
 from pointless_adding.objects import StringObject
 
-class TestStringObject(unittest.TestCase):
+from test.my_test_case import MyTestCase
+
+class TestStringObject(MyTestCase):
     """Test String Object"""
 
     def test_string_object_init(self):
